@@ -1,4 +1,4 @@
-name: Scheduler Example
+name: Scheduler-Example
 
 on:
   schedule:
