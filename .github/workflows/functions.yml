@@ -35,8 +35,7 @@ jobs:
           echo "Job context in JSON: ${{ toJSON(github) }}"
 
       - name: Parse JSON string
-        run: |
-          echo "Parsed JSON: ${{ fromJSON('{\"hello\":\"world\"}').hello }}"
+        run: 'echo "Parsed JSON: ${{ fromJSON(''{"hello":"world"}'').hello }}"'
 
       - name: Hash files
         run: |
